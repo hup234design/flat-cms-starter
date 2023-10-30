@@ -1,0 +1,29 @@
+@tailwind base;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@tailwind components;
+
+@layer components {
+
+    .container {
+        @apply max-w-7xl mx-auto px-8 lg:px-6;
+    }
+    .container .container {
+        @apply px-0 !important;
+    }
+
+    .prose {
+        @apply max-w-none lg:prose-lg;
+    }
+
+    .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+}
+
+@tailwind utilities;
